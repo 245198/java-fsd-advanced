@@ -1,0 +1,5 @@
+package com.doctorservice.repository;
+
+public interface DoctorRepository {
+
+}

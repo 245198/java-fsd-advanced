@@ -1,0 +1,9 @@
+package com.example.lambdademo.resource;
+
+public class ClassA {
+	public String Method1()
+	{
+		return "Hello World";
+	}
+
+}
