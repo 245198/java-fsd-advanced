@@ -1,0 +1,36 @@
+<div class="container">
+
+  <h4>Login Form</h4>
+  Enter Name:
+  <input type="text" class="form-control" [(ngModel)]="enterName"/>
+  <br>
+  Enter PhoneNo:
+  <input type="text" class="form-control" [(ngModel)]="enterPhoneNo"/>
+  <br>
+  DOB:
+  <input type="text" class="form-control" [(ngModel)]="enterDOB"/>
+  <br>
+
+  <input type="button" value="View" (click)="viewData()" class="btn btn-primary">
+</div>
+
+<h4>{{value}} </h4>
+
+
+<div class="container">
+
+  <h4>Login Form</h4>
+  Enter Name:
+  <input type="text" class="form-control" [(ngModel)]="Name"/>
+  <br>
+  Enter PhoneNo:
+  <input type="text" class="form-control" [(ngModel)]="PhoneNo"/>
+  <br>
+  DOB:
+  <input type="text" class="form-control" [(ngModel)]="DOB"/>
+  <br>
+  <input type="button" value="View Table" (click)="viewTable()" class="btn btn-primary">
+</div>
+
+<app-form [parentData]= parentData [parentData1]=parentData1 [parentData2]=parentData2 (submitData)="submitData($event)"></app-form>
+<app-tablec [parentData3]= parentData3 [parentData4]=parentData4 [parentData5]=parentData5></app-tablec>
